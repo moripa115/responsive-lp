@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LPの練習">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+
+  <title>LPの練習</title>
+</head>
+
+<body>
+  <header id="header">
+    <h1 class="site-title">
+      <a href="">
+        ShinCode
+      </a>
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contack">Contact</a></li>
+        <li><a href="https://www.Twitter.com" target="_blank" rel="noopener noreferrer"><img src="/img/twitter.png" alt="" class="icon"></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="main">
+    <picture>
+      <source media="(max-width:600px)" srcset="/img/main-sp.jpg">
+      <img src="/img/main-pc.jpg" alt="">
+    </picture>
+  </div>
+  <!-- about -->
+  <section id="about" class="wrapper">
+    <h2 class="sec-title">About</h2>
+    <ul>
+      <li>ShinCode株式会社</li>
+      <li>web制作会社として設立</li>
+      <li>webサイト・アプリ開発を承ります</li>
+      <li>メールアドレス：xxxxxxx@xxx.com</li>
+    </ul>
+    <p>
+      webサイト制作やアプリ開発を得意としています。またweb講師としても活動しており新人の育成をしたい企業も申し込み承ります。
+    </p>
+  </section>
+  <section id="works" class="wrapper">
+    <h2 class="sec-title">Works</h2>
+    <ul>
+      <li><img src="img/works1.jpg" alt="works1"></li>
+      <li><img src="img/works2.jpg" alt="works1"></li>
+      <li><img src="img/works3.jpg" alt="works1"></li>
+      <li><img src="img/works4.jpg" alt="works1"></li>
+      <li><img src="img/works5.jpg" alt="works1"></li>
+      <li><img src="img/works6.jpg" alt="works1"></li>
+      <li><img src="img/works3.jpg" alt="works1"></li>
+      <li><img src="img/works4.jpg" alt="works1"></li>
+      <li><img src="img/works1.jpg" alt="works1"></li>
+    </ul>
+  </section>
+  <section id="news" class="wrapper">
+    <h2 class="sec-title">News</h2>
+    <dl>
+      <dt>2022/10/29</dt>
+      <dd>本サイトをリリースしました</dd>
+      <dt>2022/10/29</dt>
+      <dd>プログラミングチュートリアルの運営を再開しました</dd>
+      <dt>2022/10/29</dt>
+      <dd>本サイトをリリースしました</dd>
+      <dt>2022/10/29</dt>
+      <dd>本サイトをリリースしました</dd>
+      <dt>2022/10/29</dt>
+      <dd>本サイトをリリースしました</dd>
+    </dl>
+  </section>
+  <section id="contact" class="wrapper">
+    <h2 class="sec-title">Contact</h2>
+    <p>お問い合わせは以下のフォームから</p>
+    <form action="#" method="POST">
+    <dl>
+      <dt><label for="name">お名前</label></dt>
+      <dd><input type="text" id="name"></dd>
+      <dt><label for="email">メールアドレス</label></dt>
+      <dd><input type="email" id="email"></dd>
+      <dt><label for="content">内容</label></dt>
+      <dd><textarea id="content" cols="30" rows="10"></textarea></dd>
+    </dl>
+    <div class="button"><input type="submit" value="送信"></div>
+  </form>
+
+  </section>
+</body>
+
+</html>

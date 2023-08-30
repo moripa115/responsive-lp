@@ -1,0 +1,262 @@
+
+html{
+  font-size: 100%;
+}
+
+body{
+  color: #242922;
+  font-family: "Sawarabi Gothic";
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  font-size: 1.3rem;
+}
+
+img{
+  max-width: 100%; 
+}
+
+li{
+  list-style: none;
+  font-size: 1.2ewm;
+}
+.wrapper{
+  width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
+
+.site-title{
+  line-height: 1px;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.site-title a{
+  color: #242922;
+}
+
+.sec-title{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 65px;
+}
+/* header */
+#header{
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 4%;
+  height: 170px;
+}
+
+#header ul{
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+}
+
+#header ul li{
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+
+#header ul li a{
+  color: #242922;
+  transition:all 0.3s;
+}
+
+#header ul li a:hover{
+  opacity: 0.5;
+}
+
+#header li img.icon{
+  width: 30px;
+}
+
+
+/* main */
+#main img{
+  width: 100%;
+  max-width: 1920px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 80px;
+}
+
+/* about */
+
+#about ul{
+  margin-bottom: 20px;
+}
+
+#about ul li:first-child{
+  margin-bottom: 20px;
+}
+
+/* works */
+#works ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+#works ul li{
+  width: 31%;
+  margin-bottom: 60px;
+}
+
+#works ul li img{
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#works ul li img:hover{
+  transform: scale(1.2,1.2);
+  opacity: 0.7;
+
+}
+
+/* news */
+#news dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #c8c8c8;
+  margin-bottom: 20px;
+}
+
+#news dt{
+  width: 20%;
+  border-top: 1px solid #c8c8c8;
+  padding: 15px;
+
+}
+
+#news dd{
+  width: 80%;
+  border-top: 1px solid #c8c8c8;
+  padding: 15px;
+
+
+}
+
+/* contact */
+#contact p{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact dl{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contact dt{
+  width: 15%;
+  padding: 8px;
+}
+#contact dd{
+  width: 85%;
+  padding: 8px;
+
+}
+
+#contact dd input,
+#contact dd textarea{
+  width: 100%;
+  border: 1px solid #c8c8c8;
+  padding: 10px;
+}
+
+#contact dd textarea{
+  height: 10rem;
+}
+
+#contact .button{
+  text-align: center;
+}
+
+#contact .button input{
+  border: 1px solid #c8c8c8;
+  padding: 15px 0;
+  width: 200px;
+  background-color: #242922;
+  color: #ffff;
+  transition: all 0.3s;
+}
+
+#contact .button input:hover{
+  background-color: #ffff;
+  color: #242922;
+
+}
+
+
+/* sp */
+
+@media screen and (max-width:600px){
+  .site-title{
+    margin-top: 20px;
+  }
+  .wrapper{
+    width: auto;
+  }
+  /* header */
+  #header{
+    flex-direction: column;
+    height: auto;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+  #header li{
+    font-size: 0.8rem;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  #header li img.icon{
+    width: 20px;
+  }
+
+  #works ul {
+    flex-direction: column;
+  }
+  #works ul li{
+    width: 100%;
+  }
+
+  /* news */
+  #news dl{
+    flex-direction: column;
+  }
+  #news dt{
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  /* contacrt */
+  #contact dl{
+    flex-direction: column;
+
+  }
+  #contact dt{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  #contact dd{
+    width: 100%;
+  }
+  
+
+
+
+}
+
